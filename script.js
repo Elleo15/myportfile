@@ -3,7 +3,7 @@
    ► WhatsApp nömrəni dəyişmək üçün WHATSAPP_NUMBER-i yenilə
    ► Email ünvanını dəyişmək üçün EMAIL-i yenilə (index.html-də də dəyiş)
 ══════════════════════════════════════════ */
-const WHATSAPP_NUMBER = "994703453070"; // ölkə kodu ilə, + və boşluqsuz
+const WHATSAPP_NUMBER = "994773453070"; // ölkə kodu ilə, + və boşluqsuz
 const EMAIL = "elvin.eyvazov1@mail.ru";
 
 
