@@ -39,6 +39,8 @@ const translations = {
     p2_desc:        "Sumqayıtda Taliş mətbəxi restoranı üçün sayt. Tam menyu, foto qalereya, üç dil dəstəyi.",
     p3_title:       "Bu Portfeyl",
     p3_desc:        "Özüm üçün hazırladığım minimalist portfeyl saytı. Sıfırdan, şablonsuz.",
+     p4_title: "La Chateau Restoran",
+p4_desc:  "Sumqayıtda Xəzər dənizi kənarında yerləşən La Chateau restoranı üçün hazırladığım sayt. Rezervasiya sistemi, menyu, foto qalereya.",
 
     /* Əlaqə */
     contact_title: "Əlaqə",
@@ -74,6 +76,9 @@ const translations = {
     p2_desc:        "A website for a Talysh cuisine restaurant in Sumqayit. Full menu, photo gallery, three-language support.",
     p3_title:       "This Portfolio",
     p3_desc:        "A minimalist portfolio site I built for myself. From scratch, no templates.",
+     p4_title: "La Chateau Restaurant",
+p4_desc:  "A website for La Chateau restaurant on the Caspian Sea coast in Sumqayit. Reservation system, menu, photo gallery.",
+     
 
     contact_title: "Contact",
     contact_sub:   "Got a project? Fill in the details and I'll get back to you on WhatsApp.",
