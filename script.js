@@ -28,7 +28,7 @@ const translations = {
     skill_ai:          "AI Alətləri",
     skill_creative:    "Kreativlik",
     skill_invest:      "İnvestisiya Məsləhəti*",
-    skill_invest_tip:  "Öz məsuliyyətinizdədir 😁", /* Tooltip mətni */
+    skill_invest_tip:  "Öz məsuliyyətinizdədir :) ", /* Tooltip mətni */
 
     /* Layihələr */
     projects_title: "Layihələr",
@@ -64,7 +64,7 @@ const translations = {
     skill_ai:         "AI Tools",
     skill_creative:   "Creativity",
     skill_invest:     "Investment Advice*",
-    skill_invest_tip: "At your own risk 😁",
+    skill_invest_tip: "At your own risk :) ",
 
     projects_title: "Projects",
     live:           "Live →",
@@ -98,7 +98,7 @@ const translations = {
     skill_ai:         "AI-инструменты",
     skill_creative:   "Креативность",
     skill_invest:     "Инвестиционный совет*",
-    skill_invest_tip: "На ваш страх и риск 😁",
+    skill_invest_tip: "На ваш страх и риск :) ",
 
     projects_title: "Проекты",
     live:           "Открыть →",
