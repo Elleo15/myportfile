@@ -349,7 +349,7 @@ h2 {
   cursor: help;
 }
 .skill-tag.tooltip::after {
-  content: attr(data-tip); /* JS tərəfindən data-tip atributuna yazılır */
+  content: attr(data-tip) " :)"; /* JS tərəfindən data-tip atributuna yazılır */
   position: absolute;
   bottom: calc(100% + 8px);
   left: 50%;
