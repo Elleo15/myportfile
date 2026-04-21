@@ -431,3 +431,14 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+/* ══════════════════════════════════════════
+   PARALLAX EFFEKTİ
+   Scroll edəndə profil şəkli yavaş hərəkət edir
+   Sürəti dəyişmək: 0.3 dəyərini dəyiş
+══════════════════════════════════════════ */
+window.addEventListener('scroll', () => {
+  const img = document.querySelector('.profile-img') || document.querySelector('.profile-placeholder');
+  if (img) {
+    img.style.transform = `translateY(${window.scrollY * 0.3}px)`;
+  }
+});
