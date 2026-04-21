@@ -398,3 +398,27 @@ if (backTop) {
     backTop.classList.toggle('visible', window.scrollY > 400);
   });
 }
+/* ══════════════════════════════════════════
+   AKTİV NAV LİNK
+   Scroll edəndə hansı bölmədəsənsə
+   nav-da o link işıqlanır
+══════════════════════════════════════════ */
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 120;
+    if (window.scrollY >= sectionTop) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove('nav-active');
+    if (link.getAttribute('href') === '#' + current) {
+      link.classList.add('nav-active');
+    }
+  });
+});
