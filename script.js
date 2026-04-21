@@ -281,3 +281,34 @@ function submitForm(e) {
     document.getElementById("contact-form").reset();
   }, 3000);
 }
+/* ══════════════════════════════════════════
+   TERMİNAL YAZI EFFEKTİ
+   Hero-da adın altında çıxan yazı
+   Mətni dəyişmək: lines massivindəki sətirləri yenilə
+══════════════════════════════════════════ */
+const terminalEl = document.getElementById('terminal-text');
+if (terminalEl) {
+  const lines = [
+    'const dev = "Elvin Eyvazov";',
+    'dev.skills = ["HTML", "CSS", "JS"];',
+    'dev.status = "Available for work";',
+  ];
+  let li = 0, ci = 0;
+  let current = '';
+
+  function typeTerminal() {
+    if (li >= lines.length) { li = 0; current = ''; terminalEl.textContent = '> '; setTimeout(typeTerminal, 1000); return; }
+    if (ci < lines[li].length) {
+      current += lines[li][ci];
+      terminalEl.textContent = '> ' + current + '█';
+      ci++;
+      setTimeout(typeTerminal, 55);
+    } else {
+      terminalEl.textContent = '> ' + current;
+      ci = 0; li++;
+      current = '';
+      setTimeout(typeTerminal, 900);
+    }
+  }
+  typeTerminal();
+}
