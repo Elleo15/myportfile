@@ -431,4 +431,9 @@ window.addEventListener('scroll', () => {
     }
   });
 });
-   
+   /* Dark mode */
+function toggleTheme() {
+  document.body.classList.toggle('dark');
+  document.getElementById('theme-btn').textContent = 
+    document.body.classList.contains('dark') ? '☀️' : '🌙';
+}
