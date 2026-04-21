@@ -160,7 +160,10 @@ img {
 .nav-links a:hover {
   color: var(--text);
 }
-
+.nav-links a.nav-active {
+  color: var(--text);
+  font-weight: 700;
+}
 /* Sağ blok: dil + hamburger */
 .nav-right {
   display: flex;
