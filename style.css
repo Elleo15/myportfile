@@ -728,26 +728,3 @@ footer {
 #back-top:hover {
   transform: translateY(-3px);
 }
-/* Sayaç */
-.stats-grid {
-  display: flex;
-  gap: 48px;
-  margin-bottom: 64px;
-}
-.stat {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-.stat-num {
-  font-family: var(--heading);
-  font-size: 52px;
-  font-weight: 800;
-  letter-spacing: -2px;
-  line-height: 1;
-}
-.stat-label {
-  font-size: 13px;
-  color: var(--muted);
-  font-weight: 400;
-}
