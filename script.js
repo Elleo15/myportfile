@@ -442,3 +442,24 @@ window.addEventListener('scroll', () => {
     img.style.transform = `translateY(${window.scrollY * 0.3}px)`;
   }
 });
+/* ══════════════════════════════════════════
+   LAYİHƏ MODALI
+   Karta klik edəndə açılır
+══════════════════════════════════════════ */
+function openModal(title, desc, meta, link) {
+  document.getElementById('modalTitle').textContent = title;
+  document.getElementById('modalDesc').textContent = desc;
+  document.getElementById('modalMeta').textContent = meta;
+  document.getElementById('modalLink').href = link;
+  document.getElementById('modalOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  document.getElementById('modalOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeModal();
+});
