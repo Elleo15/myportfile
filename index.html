@@ -360,7 +360,16 @@
       </div>
     </footer>
     <button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
-
+    <!-- Modal -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <span class="modal-meta" id="modalMeta"></span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+    <a id="modalLink" href="#" target="_blank" class="modal-btn">Canlı bax →</a>
+  </div>
+</div>
     <script src="script.js"></script>
   </body>
 </html>
