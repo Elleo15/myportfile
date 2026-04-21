@@ -43,6 +43,8 @@ const translations = {
     p4_desc:        "Sumqayıtda Xəzər dənizi kənarında yerləşən La Chateau restoranı üçün hazırladığım sayt. Rezervasiya sistemi, menyu, foto qalereya.",
     p5_title:       "Sənən Ət",
     p5_desc:        "Sumqayıtda fəaliyyət göstərən halal ət mağazası üçün hazırladığım sayt. Ön sifariş sistemi, məhsul qalereyası, WhatsApp inteqrasiyası.",
+    p6_title:       "Melan Lounge",
+    p6_desc:        "Sumqayıtda premium lounge üçün hazırladığım sayt. Tam menyu, məkan qalereyası, video bölməsi, rezervasiya sistemi.",
 
     /* Əlaqə */
     contact_title: "Əlaqə",
@@ -82,6 +84,8 @@ const translations = {
     p4_desc:        "A website for La Chateau restaurant on the Caspian Sea coast in Sumqayit. Reservation system, menu, photo gallery.",
     p5_title:       "Sənən Ət",
     p5_desc:        "A website for a halal butcher shop in Sumqayit. Pre-order system, product gallery, WhatsApp integration.",
+    p6_title:       "Melan Lounge",
+    p6_desc:        "A website for a premium lounge in Sumqayit. Full menu, venue gallery, video section, reservation system.",
      
 
     contact_title: "Contact",
@@ -121,6 +125,8 @@ const translations = {
     p4_desc:        "Сайт для ресторана La Chateau на берегу Каспийского моря в Сумгаите. Система бронирования, меню, фотогалерея.",
     p5_title:       "Sənən Ət",
     p5_desc:        "Сайт для халяльного мясного магазина в Сумгаите. Система предзаказа, галерея, интеграция с WhatsApp.",
+    p6_title:       "Melan Lounge",
+    p6_desc:        "Сайт для премиум-лаунжа в Сумгаите. Полное меню, галерея, видеораздел, система бронирования.",
 
     contact_title: "Контакты",
     contact_sub:   "Есть проект? Заполни форму — отвечу в WhatsApp.",
