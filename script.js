@@ -326,3 +326,30 @@ if (terminalEl) {
   }
   typeTerminal();
 }
+/* ══════════════════════════════════════════
+   XÜSUSI KURSOR EFFEKTİ
+══════════════════════════════════════════ */
+const cursor = document.getElementById('cursor');
+const cursorRing = document.getElementById('cursorRing');
+
+if (cursor && cursorRing) {
+  document.addEventListener('mousemove', e => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top  = e.clientY + 'px';
+    setTimeout(() => {
+      cursorRing.style.left = e.clientX + 'px';
+      cursorRing.style.top  = e.clientY + 'px';
+    }, 80);
+  });
+
+  document.querySelectorAll('a, button, .project-card, .skill-bar').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      cursor.classList.add('grow');
+      cursorRing.classList.add('grow');
+    });
+    el.addEventListener('mouseleave', () => {
+      cursor.classList.remove('grow');
+      cursorRing.classList.remove('grow');
+    });
+  });
+}
