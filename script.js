@@ -56,6 +56,9 @@ const translations = {
     ph_deadline:   "Neçə günə lazımdır? — məs. 7 gün, 2 həftə",
     submit_btn:    "WhatsApp-dan göndər",
     or_email:      "Və ya email:",
+    stat_projects:     "Layihə",
+    stat_langs:        "Dil dəstəyi",
+    stat_satisfaction: "% Müştəri məmnuniyyəti",
   },
 
   en: {
@@ -97,6 +100,9 @@ const translations = {
     ph_deadline:   "Deadline — e.g. 7 days, 2 weeks",
     submit_btn:    "Send via WhatsApp",
     or_email:      "Or email:",
+    stat_projects:     "Projects",
+    stat_langs:        "Language support",
+    stat_satisfaction: "% Client satisfaction",
   },
 
   ru: {
@@ -137,6 +143,9 @@ const translations = {
     ph_deadline:   "Срок — напр. 7 дней, 2 недели",
     submit_btn:    "Отправить через WhatsApp",
     or_email:      "Или email:",
+    stat_projects:     "Проектов",
+    stat_langs:        "Языковая поддержка",
+    stat_satisfaction: "% Удовлетворённость",
   },
 };
 
@@ -422,3 +431,27 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+/* ══════════════════════════════════════════
+   SAYAÇ EFFEKTİ
+   Scroll edəndə rəqəmlər 0-dan sayır
+══════════════════════════════════════════ */
+const statObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll('.stat-num').forEach(num => {
+        const target = +num.dataset.target;
+        let count = 0;
+        const step = Math.ceil(target / 40);
+        const timer = setInterval(() => {
+          count += step;
+          if (count >= target) { count = target; clearInterval(timer); }
+          num.textContent = count;
+        }, 30);
+      });
+      statObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+
+const statsGrid = document.querySelector('.stats-grid');
+if (statsGrid) statObserver.observe(statsGrid);
