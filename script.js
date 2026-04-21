@@ -373,7 +373,7 @@ if (canvas) {
   function drawMatrix() {
     ctx.fillStyle = 'rgba(250, 250, 248, 0.05)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = '#0f0f0e';
+    ctx.fillStyle = '#22c55e';
     ctx.font = fontSize + 'px monospace';
 
     drops.forEach((y, i) => {
