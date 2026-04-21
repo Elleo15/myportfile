@@ -237,6 +237,20 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
 
+/* Progress bar animasiyası */
+const barObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll('.skill-bar-fill').forEach(bar => {
+        bar.style.width = bar.dataset.width + '%';
+      });
+      barObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+
+const skillsGrid = document.querySelector('.skills-grid');
+if (skillsGrid) barObserver.observe(skillsGrid);
 
 /* ══════════════════════════════════════════
    WHATSAPP FORMU
