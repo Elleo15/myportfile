@@ -391,3 +391,10 @@ if (canvas) {
     canvas.height = window.innerHeight;
   });
 }
+/* Back to top düyməsi */
+const backTop = document.getElementById('back-top');
+if (backTop) {
+  window.addEventListener('scroll', () => {
+    backTop.classList.toggle('visible', window.scrollY > 400);
+  });
+}
