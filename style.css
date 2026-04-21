@@ -433,7 +433,28 @@ h2 {
   transform: translateY(-5px);
   box-shadow: 0 16px 48px rgba(0, 0, 0, 0.07);
 }
-
+/* Hover preview */
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+.project-card .preview {
+  position: absolute;
+  inset: 0;
+  background: var(--text);
+  color: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  opacity: 0;
+  transition: opacity var(--ease);
+}
+.project-card:hover .preview {
+  opacity: 0.92;
+}
 /* Texnologiya yazısı (HTML · CSS · JS) */
 .project-meta {
   font-size: 11px;
