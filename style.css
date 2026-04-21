@@ -373,49 +373,34 @@ h2 {
   gap: 10px;
 }
 
-/* Hər bacarıq etiketi */
-.skill-tag {
-  display: inline-block;
-  padding: 9px 20px;
-  background: var(--pill);
-  border: 1px solid var(--border);
+/* Bacarıq progress barları */
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+.skill-bar-top {
+  display: flex;
+  justify-content: space-between;
   font-size: 13px;
-  font-weight: 500;
-  cursor: default;
-  transition:
-    background var(--ease),
-    color var(--ease),
-    border-color var(--ease);
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text);
 }
-.skill-tag:hover {
+.skill-bar-track {
+  width: 100%;
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.skill-bar-fill {
+  height: 100%;
+  width: 0%;
   background: var(--text);
-  color: var(--bg);
-  border-color: var(--text);
-}
-
-/* Zarafat tooltip */
-.skill-tag.tooltip {
-  position: relative;
-  cursor: help;
-}
-.skill-tag.tooltip::after {
-  content: attr(data-tip); /* JS tərəfindən data-tip atributuna yazılır */
-  position: absolute;
-  bottom: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--text);
-  color: var(--bg);
-  font-size: 11px;
-  font-weight: 400;
-  padding: 5px 10px;
-  white-space: nowrap;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity var(--ease);
-}
-.skill-tag.tooltip:hover::after {
-  opacity: 1;
+  border-radius: 2px;
+  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ══════════════════════════════════════════
