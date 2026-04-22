@@ -45,6 +45,8 @@ const translations = {
     p5_desc:        "Sumqayıtda fəaliyyət göstərən halal ət mağazası üçün hazırladığım sayt. Ön sifariş sistemi, məhsul qalereyası, WhatsApp inteqrasiyası.",
     p6_title:       "Melan Lounge",
     p6_desc:        "Sumqayıtda premium lounge üçün hazırladığım sayt. Tam menyu, məkan qalereyası, video bölməsi, rezervasiya sistemi.",
+    p7_title:       "Sky Cake",
+    p7_desc:        "Sumqayıtda əl işi tort və şirniyyat mağazası üçün hazırladığım sayt. Sifariş sistemi, məhsul kataloqu, foto qalereya.",
 
     /* Əlaqə */
     contact_title: "Əlaqə",
@@ -89,6 +91,8 @@ const translations = {
     p5_desc:        "A website for a halal butcher shop in Sumqayit. Pre-order system, product gallery, WhatsApp integration.",
     p6_title:       "Melan Lounge",
     p6_desc:        "A website for a premium lounge in Sumqayit. Full menu, venue gallery, video section, reservation system.",
+    p7_title:       "Sky Cake",
+    p7_desc:        "A website for a handcrafted cake and pastry shop in Sumqayit. Order system, product catalogue, photo gallery.",
      
 
     contact_title: "Contact",
@@ -133,6 +137,8 @@ const translations = {
     p5_desc:        "Сайт для халяльного мясного магазина в Сумгаите. Система предзаказа, галерея, интеграция с WhatsApp.",
     p6_title:       "Melan Lounge",
     p6_desc:        "Сайт для премиум-лаунжа в Сумгаите. Полное меню, галерея, видеораздел, система бронирования.",
+    p7_title:       "Sky Cake",
+    p7_desc:        "Сайт для кондитерской ручной работы в Сумгаите. Система заказов, каталог продуктов, фотогалерея.",
 
     contact_title: "Контакты",
     contact_sub:   "Есть проект? Заполни форму — отвечу в WhatsApp.",
