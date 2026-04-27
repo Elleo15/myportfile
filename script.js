@@ -46,7 +46,9 @@ const translations = {
     p6_title:       "Melan Lounge",
     p6_desc:        "Sumqayıtda premium lounge üçün hazırladığım sayt. Tam menyu, məkan qalereyası, video bölməsi, rezervasiya sistemi.",
     p7_title:       "Sky Cake",
-    p7_desc:        "Sumqayıtda əl işi tort və şirniyyat mağazası üçün hazırladığım sayt. Sifariş sistemi, məhsul kataloqu, foto qalereya.",
+    p7_desc:        "Bakıda əl işi tort və şirniyyat mağazası üçün hazırladığım sayt. Sifariş sistemi, məhsul kataloqu, foto qalereya.",
+    p8_title:       "Yavər Sərdarlı — Barber",
+    p8_desc:        "Sumqayıtda professional barber üçün hazırladığım sayt. Rezervasiya sistemi, xidmətlər, foto qalereya, üç dil dəstəyi.",
 
     /* Əlaqə */
     contact_title: "Əlaqə",
@@ -90,9 +92,11 @@ const translations = {
     p5_title:       "Sənən Ət",
     p5_desc:        "A website for a halal butcher shop in Sumqayit. Pre-order system, product gallery, WhatsApp integration.",
     p6_title:       "Melan Lounge",
-    p6_desc:        "A website for a premium lounge in Sumqayit. Full menu, venue gallery, video section, reservation system.",
+    p6_desc:        "A website for a premium lounge in Baku. Full menu, venue gallery, video section, reservation system.",
     p7_title:       "Sky Cake",
     p7_desc:        "A website for a handcrafted cake and pastry shop in Sumqayit. Order system, product catalogue, photo gallery.",
+    p8_title:       "Yavər Sərdarlı — Barber",
+    p8_desc:        "A website for a professional barber in Sumqayit. Reservation system, services, photo gallery, three-language support.",
      
 
     contact_title: "Contact",
@@ -138,7 +142,9 @@ const translations = {
     p6_title:       "Melan Lounge",
     p6_desc:        "Сайт для премиум-лаунжа в Сумгаите. Полное меню, галерея, видеораздел, система бронирования.",
     p7_title:       "Sky Cake",
-    p7_desc:        "Сайт для кондитерской ручной работы в Сумгаите. Система заказов, каталог продуктов, фотогалерея.",
+    p7_desc:        "Сайт для кондитерской ручной работы в Баку. Система заказов, каталог продуктов, фотогалерея.",
+    p8_title:       "Явяр Сярдарлы — Барбер",
+    p8_desc:        "Сайт для профессионального барбера в Сумгаите. Система бронирования, услуги, фотогалерея, поддержка трёх языков.",
 
     contact_title: "Контакты",
     contact_sub:   "Есть проект? Заполни форму — отвечу в WhatsApp.",
