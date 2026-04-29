@@ -20,7 +20,7 @@ const translations = {
     nav_contact:  "Əlaqə",
 
     /* Hero */
-    bio: "Salam, mən Elvinəm. Ekranda gördüyün hər şeyin arxasında kod var — mən həmin kodu yazıram. Frontend üzərində fokuslanıram: sadə, sürətli, gözəl.",
+    bio: "Salam, mən Elvinəm. Ekranda gördüyün hər şeyin arxasında kod var — mən həmin kodu yazıram. Frontend və Backend üzərində işləyirəm.",
     cta: "Layihələrimə bax",
 
     /* Bacarıqlar */
