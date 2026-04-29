@@ -20,7 +20,7 @@ const translations = {
     nav_contact:  "Əlaqə",
 
     /* Hero */
-    bio: "Salam, mən Elvinəm. Ekranda gördüyün hər şeyin arxasında kod var — mən həmin kodu yazıram. Frontend və Backend üzərində işləyirəm.",
+    bio: "Salam, mən Elvinəm. Ekranda gördüyün hər şeyin arxasında kod var — mən həmin kodu yazıram. Frontend üzərində fokuslanıram, təmiz, sürətli və gözəl.",
     cta: "Layihələrimə bax",
 
     /* Bacarıqlar */
@@ -331,7 +331,7 @@ const terminalEl = document.getElementById('terminal-text');
 if (terminalEl) {
   const lines = [
     'const dev = "Elvin Eyvazov";',
-    'dev.skills = ["HTML", "CSS", "JS", "Node.js"];',
+    'dev.skills = ["HTML", "CSS", "JS"];',
     'dev.status = "Available for work";',
   ];
   let li = 0, ci = 0;
