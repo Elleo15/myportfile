@@ -331,7 +331,7 @@ const terminalEl = document.getElementById('terminal-text');
 if (terminalEl) {
   const lines = [
     'const dev = "Elvin Eyvazov";',
-    'dev.skills = ["HTML", "CSS", "JS"];',
+    'dev.skills = ["HTML", "CSS", "JS", "Node.js"];',
     'dev.status = "Available for work";',
   ];
   let li = 0, ci = 0;
