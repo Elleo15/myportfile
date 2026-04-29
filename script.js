@@ -51,6 +51,8 @@ const translations = {
     p8_desc:        "Sumqayıtda professional barber üçün hazırladığım sayt. Rezervasiya sistemi, xidmətlər, foto qalereya, üç dil dəstəyi.",
     p9_title:       "KOMEDİXANA",
     p9_desc:        "Xəzər TV-nin məşhur komediya verilişi üçün hazırladığım rəsmi sayt. Bilet sistemi, bölümlər, aktyor heyəti, sponsor bölməsi.",
+    p10_title:      "Grooming House",
+    p10_desc:       "Sumqayıtda it və pişiklər üçün professional pet salon saytı. Rezervasiya sistemi, xidmətlər, foto qalereya, əvvəl/sonra müqayisəsi.",
 
     /* Əlaqə */
     contact_title: "Əlaqə",
@@ -101,6 +103,8 @@ const translations = {
     p8_desc:        "A website for a professional barber in Sumqayit. Reservation system, services, photo gallery, three-language support.",
     p9_title:       "KOMEDİXANA",
     p9_desc:        "Official website for KOMEDİXANA, Azerbaijan's popular comedy show on Xəzər TV. Ticket system, episodes, cast, sponsors.",
+    p10_title:      "Grooming House",
+    p10_desc:       "A website for a professional pet grooming salon in Sumqayit. Reservation system, services, photo gallery, before/after comparison.",
      
 
     contact_title: "Contact",
@@ -151,6 +155,8 @@ const translations = {
     p8_desc:        "Сайт для профессионального барбера в Сумгаите. Система бронирования, услуги, фотогалерея, поддержка трёх языков.",
     p9_title:       "KOMEDİXANA",
     p9_desc:        "Официальный сайт популярного комедийного шоу KOMEDİXANA на Xəzər TV. Система билетов, эпизоды, актёры, спонсоры.",
+    p10_title:      "Grooming House",
+    p10_desc:       "Сайт для профессионального груминг-салона в Сумгаите. Система бронирования, услуги, фотогалерея, сравнение до/после.",
 
     contact_title: "Контакты",
     contact_sub:   "Есть проект? Заполни форму — отвечу в WhatsApp.",
