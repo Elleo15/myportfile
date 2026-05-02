@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "1.0",
+  "serverInfo": {
+    "name": "Elvin Eyvazov Portfolio",
+    "version": "1.0.0",
+    "description": "Personal portfolio website of Elvin Eyvazov, frontend developer."
+  },
+  "transport": {
+    "type": "http",
+    "endpoint": "https://elvineyvazov.shop"
+  },
+  "capabilities": {
+    "tools": false,
+    "resources": true,
+    "prompts": false
+  }
+}

@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ── Səhifə başlığı — dəyişmək üçün burda yaz ── -->
+    <title>Elvin Eyvazov</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ── Google Fonts: Syne (başlıqlar) + Outfit (mətn) ── -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J9F92DCDRQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J9F92DCDRQ');
+</script>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+  </head>
+  <body>
+    <!-- ══════════════════════════════════════════
+       NAVİGASİYA
+       Nav linklərinin mətnini dəyişmək üçün
+       script.js → translations → nav_about / nav_projects / nav_contact
+  ══════════════════════════════════════════ -->
+    <canvas id="matrix-canvas"></canvas>
+    <div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+    <nav id="navbar">
+      <!-- Logo — baş hərflər, dəyişmək üçün burda yaz. Kliklədikdə yuxarıya qayıdır -->
+      <a
+        href="#"
+        class="logo"
+        onclick="
+          window.location.reload();
+          return false;
+        "
+        >EE</a
+      >
+
+      <!-- Desktop nav linkləri -->
+      <div class="nav-links">
+        <a href="#about" data-key="nav_about">Haqqımda</a>
+        <a href="#projects" data-key="nav_projects">Layihələr</a>
+        <a href="#contact" data-key="nav_contact">Əlaqə</a>
+      </div>
+
+      <!-- Dil seçimi + hamburger düyməsi -->
+      <div class="nav-right">
+        <div class="lang-switcher">
+          <button class="lang-btn active" onclick="setLang('az')">AZ</button>
+          <button class="lang-btn" onclick="setLang('en')">EN</button>
+          <button class="lang-btn" onclick="setLang('ru')">RU</button>
+        </div>
+        <button class="ham-btn" id="hamBtn" aria-label="Menyu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobil menyu — hamburgerə basanda açılır -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="mobile-close" id="mobileClose">✕</button>
+      <a href="#about" data-key="nav_about" onclick="closeMobile()">Haqqımda</a>
+      <a href="#projects" data-key="nav_projects" onclick="closeMobile()"
+        >Layihələr</a
+      >
+      <a href="#contact" data-key="nav_contact" onclick="closeMobile()"
+        >Əlaqə</a
+      >
+      <div class="mobile-lang">
+        <button
+          class="lang-btn active"
+          onclick="
+            setLang('az');
+            closeMobile();
+          "
+        >
+          AZ
+        </button>
+        <button
+          class="lang-btn"
+          onclick="
+            setLang('en');
+            closeMobile();
+          "
+        >
+          EN
+        </button>
+        <button
+          class="lang-btn"
+          onclick="
+            setLang('ru');
+            closeMobile();
+          "
+        >
+          RU
+        </button>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════
+       HERO
+       Şəkli dəyişmək: profile-picture.jpg-ni əvəz et
+         və ya src="YENİ_ŞƏKİL.jpg" yaz.
+       Adı dəyişmək: h1 içindəki mətni dəyiş.
+       Bio mətni: script.js → translations → bio
+  ══════════════════════════════════════════ -->
+    <section id="hero">
+      <div class="hero-content">
+        <img
+          src="profile-picture.jpg"
+          alt="Elvin Eyvazov"
+          class="profile-img"
+          id="profile-img"
+        />
+        <div class="hero-text">
+          <div class="terminal-box">
+  <span id="terminal-text">&gt; _</span>
+</div>
+          <div class="available-badge">
+  <span class="dot"></span>
+  <span>Available for work</span>
+</div>
+          <h1>Elvin Eyvazov</h1>
+          <p class="bio" data-key="bio">
+            Salam, mən Elvinəm. Ekranda gördüyün hər şeyin arxasında kod var —
+            mən həmin kodu yazıram. Frontend üzərində fokuslanıram: sadə,
+            sürətli, gözəl.
+          </p>
+          <a href="#projects" class="cta-btn" data-key="cta"
+            >Layihələrimə bax</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+       BACARIQLAR
+       Yeni bacarıq əlavə etmək: .skill-tag ilə
+         yeni <span> əlavə et.
+       Tooltip zarafat üçün: data-tip-key atributunu
+         script.js translations-a əlavə et.
+  ══════════════════════════════════════════ -->
+    <section id="about">
+      <h2 class="fade-in" data-key="skills_title">Bacarıqlar</h2>
+     <div class="skills-grid fade-in">
+  <div class="skill-bar">
+    <div class="skill-bar-top"><span>HTML</span><span>100%</span></div>
+    <div class="skill-bar-track"><div class="skill-bar-fill" data-width="100"></div></div>
+  </div>
+  <div class="skill-bar">
+    <div class="skill-bar-top"><span>CSS</span><span>100%</span></div>
+    <div class="skill-bar-track"><div class="skill-bar-fill" data-width="100"></div></div>
+  </div>
+  <div class="skill-bar">
+    <div class="skill-bar-top"><span>JavaScript</span><span>100%</span></div>
+    <div class="skill-bar-track"><div class="skill-bar-fill" data-width="100"></div></div>
+  </div>
+  <div class="skill-bar">
+    <div class="skill-bar-top"><span data-key="skill_ai">AI Alətləri</span><span>100%</span></div>
+    <div class="skill-bar-track"><div class="skill-bar-fill" data-width="100"></div></div>
+  </div>
+  <div class="skill-bar">
+    <div class="skill-bar-top"><span data-key="skill_creative">Kreativlik</span><span>100%</span></div>
+    <div class="skill-bar-track"><div class="skill-bar-fill" data-width="100"></div></div>
+  </div>
+  <div class="skill-bar tooltip" data-tip-key="skill_invest_tip" data-key="skill_invest">
+    <div class="skill-bar-top"><span data-key="skill_invest">İnvestisiya Məsləhəti*</span><span>💯</span></div>
+    <div class="skill-bar-track"><div class="skill-bar-fill" data-width="100"></div></div>
+  </div>
+</div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+       LAYİHƏLƏR
+       Yeni layihə əlavə etmək: .project-card div-ini
+         kopyala, data-key dəyərlərini yenilə,
+         href linklərini öz linklərinlə əvəz et.
+       Layihə mətnləri: script.js → translations → p1_title...
+  ══════════════════════════════════════════ -->
+    <section id="projects">
+      <h2 class="fade-in" data-key="projects_title">Layihələr</h2>
+      <div class="projects-grid">
+        <!-- Layihə 1 ── linkləri dəyişmək üçün href-ləri yenilə -->
+<div class="project-card fade-in" onclick="openModal('This.is.Coffee — Utena', 'Litva\'da specialty qəhvə dükanı üçün hazırladığım çoxdilli sayt. Menyu, foto qalereya, iş saatları.', 'HTML · CSS · JS', 'https://elleo15.github.io/this.is.coffee-utena/')">
+
+          <span class="project-meta">HTML · CSS · JS</span>
+          <h3 data-key="p1_title">This.is.Coffee — Utena</h3>
+          <p data-key="p1_desc">
+            Litva'da specialty qəhvə dükanı üçün hazırladığım çoxdilli sayt.
+            Menyu, foto qalereya, iş saatları.
+          </p>
+          <div class="project-links">
+            <a
+              href="https://elleo15.github.io/this.is.coffee-utena/"
+              target="_blank"
+              data-key="live"
+              >Canlı bax →</a
+            >
+          </div>
+        </div>
+
+        <!-- Layihə 2 -->
+<div class="project-card fade-in" onclick="openModal('Ərkivan Restoran', 'Sumqayıtda Taliş mətbəxi restoranı üçün sayt. Tam menyu, foto qalereya, üç dil dəstəyi.', 'HTML · CSS · JS', 'https://elleo15.github.io/erkivan-website/')">
+
+          <span class="project-meta">HTML · CSS · JS</span>
+          <h3 data-key="p2_title">Ərkivan Restoran</h3>
+          <p data-key="p2_desc">
+            Sumqayıtda Taliş mətbəxi restoranı üçün sayt. Tam menyu, foto
+            qalereya, üç dil dəstəyi.
+          </p>
+          <div class="project-links">
+            <a
+              href="https://elleo15.github.io/erkivan-website/"
+              target="_blank"
+              data-key="live"
+              >Canlı bax →</a
+            >
+            
+            >
+          </div>
+        </div>
+
+        <!-- Layihə 3 -->
+<div class="project-card fade-in" onclick="openModal('Bu Portfeyl', 'Özüm üçün hazırladığım minimalist portfeyl saytı. Sıfırdan, şablonsuz.', 'HTML · CSS · JS', 'https://elvineyvazov.shop')">
+
+          <span class="project-meta">HTML · CSS · JS</span>
+          <h3 data-key="p3_title">Bu Portfeyl</h3>
+          <p data-key="p3_desc">
+            Özüm üçün hazırladığım minimalist portfeyl saytı. Sıfırdan,
+            şablonsuz.
+          </p>
+          <div class="project-links">
+            <a href="https://elvineyvazov.shop" target="_blank" data-key="live"
+              >Canlı bax →</a>            
+          </div>
+        </div>
+        <!-- Layihə 4 -->
+<div class="project-card fade-in" onclick="openModal('La Chateau Restoran', 'Sumqayıtda Xəzər dənizi kənarında yerləşən La Chateau restoranı üçün hazırladığım sayt. Rezervasiya sistemi, menyu, foto qalereya.', 'HTML · CSS · JS', 'https://elleo15.github.io/la-chateau-website/')">
+
+          <span class="project-meta">HTML · CSS · JS</span>
+          <h3 data-key="p4_title">La Chateau Restoran</h3>
+          <p data-key="p4_desc">Sumqayıtda Xəzər dənizi kənarında yerləşən La Chateau restoranı üçün hazırladığım sayt. Rezervasiya sistemi, menyu, foto qalereya.</p>
+          <div class="project-links">
+            <a href="https://elleo15.github.io/la-chateau-website/" target="_blank" data-key="live">Canlı bax →</a>
+          </div>
+        </div>
+        <!-- Layihə 5 -->
+<div class="project-card fade-in" onclick="openModal('Sənən Ət', 'Sumqayıtda fəaliyyət göstərən halal ət mağazası üçün hazırladığım sayt. Ön sifariş sistemi, məhsul qalereyası, WhatsApp inteqrasiyası.', 'HTML · CSS · JS', 'https://sanantahmazov.store')">
+
+          <span class="project-meta">HTML · CSS · JS</span>
+          <h3 data-key="p5_title">Sənən Ət</h3>
+          <p data-key="p5_desc">Sumqayıtda fəaliyyət göstərən halal ət mağazası üçün hazırladığım sayt. Ön sifariş sistemi, məhsul qalereyası, WhatsApp inteqrasiyası.</p>
+          <div class="project-links">
+            <a href="https://sanantahmazov.store" target="_blank" data-key="live">Canlı bax →</a>
+          </div>
+        </div>
+        <!-- Layihə 6 -->
+<div class="project-card fade-in" onclick="openModal('Melan Lounge', 'Sumqayıtda premium lounge üçün hazırladığım sayt. Tam menyu, məkan qalereyası, video bölməsi, rezervasiya sistemi.', 'HTML · CSS · JS', 'https://elleo15.github.io/melan-lounge/')">
+
+          <span class="project-meta">HTML · CSS · JS</span>
+          <h3 data-key="p6_title">Melan Lounge</h3>
+          <p data-key="p6_desc">Sumqayıtda premium lounge üçün hazırladığım sayt. Tam menyu, məkan qalereyası, video bölməsi, rezervasiya sistemi.</p>
+          <div class="project-links">
+          <a href="https://elleo15.github.io/melan-lounge/" target="_blank" data-key="live">Canlı bax →</a>
+          </div>
+        </div>
+        <!-- Layihə 7 -->
+<div class="project-card fade-in" onclick="openModal('Sky Cake', 'Sumqayıtda əl işi tort və şirniyyat mağazası üçün hazırladığım sayt. Sifariş sistemi, məhsul kataloqu, foto qalereya, çatdırılma məlumatı.', 'HTML · CSS · JS', 'https://samahmadova.shop/')">
+  <span class="project-meta">HTML · CSS · JS</span>
+  <h3 data-key="p7_title">Sky Cake</h3>
+  <p data-key="p7_desc">Sumqayıtda əl işi tort və şirniyyat mağazası üçün hazırladığım sayt. Sifariş sistemi, məhsul kataloqu, foto qalereya.</p>
+  <div class="project-links">
+    <a href="https://samahmadova.shop/" target="_blank" data-key="live">Canlı bax →</a>
+  </div>
+</div>
+        <!-- Layihə 8 -->
+<div class="project-card fade-in" onclick="openModal('Yavər Sərdarlı — Barber', 'Sumqayıtda fəaliyyət göstərən professional barber üçün hazırladığım sayt. Rezervasiya sistemi, xidmətlər, foto qalereya, üç dil dəstəyi.', 'HTML · CSS · JS', 'https://elleo15.github.io/barber-yaver/')">
+  <span class="project-meta">HTML · CSS · JS</span>
+  <h3 data-key="p8_title">Yavər Sərdarlı — Barber</h3>
+  <p data-key="p8_desc">Sumqayıtda professional barber üçün hazırladığım sayt. Rezervasiya sistemi, xidmətlər, foto qalereya, üç dil dəstəyi.</p>
+  <div class="project-links">
+    <a href="https://elleo15.github.io/barber-yaver/" target="_blank" data-key="live">Canlı bax →</a>
+  </div>
+</div>
+        <!-- Layihə 9 -->
+<div class="project-card fade-in" onclick="openModal('KOMEDİXANA', 'Xəzər TV-nin məşhur komediya verilişi üçün hazırladığım rəsmi sayt. Bilet sistemi, bölümlər, aktyor heyəti, sponsor bölməsi, 3 dil dəstəyi.', 'HTML · CSS · JS', 'https://elleo15.github.io/Komedixana/')">
+  <span class="project-meta">HTML · CSS · JS</span>
+  <h3 data-key="p9_title">KOMEDİXANA</h3>
+  <p data-key="p9_desc">Xəzər TV-nin məşhur komediya verilişi üçün hazırladığım rəsmi sayt. Bilet sistemi, bölümlər, aktyor heyəti, sponsor bölməsi.</p>
+  <div class="project-links">
+    <a href="https://elleo15.github.io/Komedixana/" target="_blank" data-key="live">Canlı bax →</a>
+  </div>
+</div>
+        <!-- Layihə 10 -->
+<div class="project-card fade-in" onclick="openModal('Grooming House', 'Sumqayıtda it və pişiklər üçün professional pet salon üçün hazırladığım sayt. Rezervasiya sistemi, xidmətlər, foto qalereya, əvvəl/sonra müqayisəsi, 3 dil dəstəyi.', 'HTML · CSS · JS', 'https://elleo15.github.io/grooming-house/')">
+  <span class="project-meta">HTML · CSS · JS</span>
+  <h3 data-key="p10_title">Grooming House</h3>
+  <p data-key="p10_desc">Sumqayıtda it və pişiklər üçün professional pet salon saytı. Rezervasiya sistemi, xidmətlər, foto qalereya, əvvəl/sonra müqayisəsi.</p>
+  <div class="project-links">
+    <a href="https://elleo15.github.io/grooming-house/" target="_blank" data-key="live">Canlı bax →</a>
+  </div>
+</div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+       ƏLAQƏ FORMU
+       WhatsApp nömrəsi: script.js → WHATSAPP_NUMBER
+       Email ünvanı: script.js → EMAIL (və aşağıdakı a href)
+       Form sahələrinin placeholder-ları:
+         script.js → translations → ph_name / ph_phone...
+  ══════════════════════════════════════════ -->
+    <section id="contact">
+      <h2 class="fade-in" data-key="contact_title">Əlaqə</h2>
+      <p class="contact-sub fade-in" data-key="contact_sub">
+        Bir layihən var? Məlumatları doldur, WhatsApp-dan cavab verəcəm.
+      </p>
+
+      <form id="contact-form" class="fade-in" onsubmit="submitForm(event)">
+        <!-- Ad Soyad -->
+        <input
+          type="text"
+          id="f-name"
+          data-key-ph="ph_name"
+          placeholder="Ad Soyad"
+          required
+        />
+
+        <!-- Telefon -->
+        <input
+          type="tel"
+          id="f-phone"
+          data-key-ph="ph_phone"
+          placeholder="Telefon"
+          required
+        />
+
+        <!-- Layihə başlığı -->
+        <input
+          type="text"
+          id="f-title"
+          data-key-ph="ph_title"
+          placeholder="Layihə başlığı"
+          required
+        />
+
+        <!-- Detallar -->
+        <textarea
+          id="f-details"
+          data-key-ph="ph_details"
+          placeholder="Detallar..."
+          rows="5"
+        ></textarea>
+
+        <!-- Müddət -->
+        <input
+          type="text"
+          id="f-deadline"
+          data-key-ph="ph_deadline"
+          placeholder="Neçə günə lazımdır?"
+        />
+
+        <!-- Göndər düyməsi -->
+        <button type="submit" data-key="submit_btn">WhatsApp-dan göndər</button>
+
+        <!-- Email hint — ünvanı dəyişmək üçün href və mətni yenilə -->
+        <p class="email-hint">
+          <span data-key="or_email">Və ya email:</span>
+          <a href="mailto:elvin.eyvazov1@mail.ru">elvin.eyvazov1@mail.ru</a>
+        </p>
+      </form>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+       FOOTER
+       Sosial media linklərini dəyişmək üçün
+         aşağıdakı href-ləri öz profilinlə əvəz et.
+  ══════════════════════════════════════════ -->
+    <footer>
+      <span class="footer-copy">© 2025 Elvin Eyvazov</span>
+      <div class="social-links">
+        <a href="https://github.com/elleo15" target="_blank">GitHub</a>
+        <a
+          href="https://linkedin.com/in/elvin-eyvazov-771795396"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://instagram.com/e1vin.eyvazov" target="_blank"
+          >Instagram</a
+        >
+      </div>
+    </footer>
+    <button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+    <!-- Modal -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <span class="modal-meta" id="modalMeta"></span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+    <a id="modalLink" href="#" target="_blank" class="modal-btn">Canlı bax →</a>
+  </div>
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>
