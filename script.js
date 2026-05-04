@@ -62,6 +62,8 @@ const translations = {
     p10_title: "Grooming House",
     p10_desc:
       "Sumqayıtda it və pişiklər üçün professional pet salon saytı. Rezervasiya sistemi, xidmətlər, foto qalereya, əvvəl/sonra müqayisəsi.",
+     p11_title: "Tərlan Əliyev — Fitness",
+p11_desc:  "IFBB Avropa çempionu, professional fitness trainer üçün hazırladığım sayt. Rezervasiya sistemi, xidmətlər, nailiyyətlər, müştəri rəyləri.",
 
     /* Əlaqə */
     contact_title: "Əlaqə",
@@ -126,6 +128,8 @@ const translations = {
     p10_title: "Grooming House",
     p10_desc:
       "A website for a professional pet grooming salon in Sumqayit. Reservation system, services, photo gallery, before/after comparison.",
+     p11_title: "Tərlan Aliyev — Fitness",
+p11_desc:  "A website for an IFBB European champion and professional fitness trainer. Booking system, services, achievements, client reviews.",
 
     contact_title: "Contact",
     contact_sub:
@@ -189,6 +193,8 @@ const translations = {
     p10_title: "Grooming House",
     p10_desc:
       "Сайт для профессионального груминг-салона в Сумгаите. Система бронирования, услуги, фотогалерея, сравнение до/после.",
+     p11_title: "Тарлан Алиев — Фитнес",
+p11_desc:  "Сайт для чемпиона Европы IFBB и профессионального фитнес-тренера. Система бронирования, услуги, достижения, отзывы клиентов.",
 
     contact_title: "Контакты",
     contact_sub: "Есть проект? Заполни форму — отвечу в WhatsApp.",
