@@ -64,6 +64,8 @@ const translations = {
       "Sumqayıtda it və pişiklər üçün professional pet salon saytı. Rezervasiya sistemi, xidmətlər, foto qalereya, əvvəl/sonra müqayisəsi.",
      p11_title: "Tərlan Əliyev — Fitness",
 p11_desc:  "IFBB Avropa çempionu, professional fitness trainer üçün hazırladığım sayt. Rezervasiya sistemi, xidmətlər, nailiyyətlər, müştəri rəyləri.",
+     p12_title: "Kalyon Restoran",
+p12_desc:  "Novxanıda dəniz kənarında yerləşən Kalyon restoranı üçün hazırladığım sayt. Rezervasiya sistemi, menyu, foto qalereya, VIP otaqlar.",
 
     /* Əlaqə */
     contact_title: "Əlaqə",
@@ -122,6 +124,8 @@ p11_desc:  "IFBB Avropa çempionu, professional fitness trainer üçün hazırla
       "A website for a professional pet grooming salon in Sumqayit. Reservation system, services, photo gallery, before/after comparison.",
      p11_title: "Tərlan Aliyev — Fitness",
 p11_desc:  "A website for an IFBB European champion and professional fitness trainer. Booking system, services, achievements, client reviews.",
+     p12_title: "Kalyon Restaurant",
+p12_desc:  "A website for Kalyon Restaurant on the Novkhani seaside. Reservation system, menu, photo gallery, VIP rooms.",
 
     contact_title: "Contact",
     contact_sub:
@@ -179,6 +183,8 @@ p11_desc:  "A website for an IFBB European champion and professional fitness tra
       "Сайт для профессионального груминг-салона в Сумгаите. Система бронирования, услуги, фотогалерея, сравнение до/после.",
      p11_title: "Тарлан Алиев — Фитнес",
 p11_desc:  "Сайт для чемпиона Европы IFBB и профессионального фитнес-тренера. Система бронирования, услуги, достижения, отзывы клиентов.",
+     p12_title: "Ресторан Kalyon",
+p12_desc:  "Сайт для ресторана Kalyon на берегу моря в Новханы. Система бронирования, меню, фотогалерея, VIP-залы.",
 
     contact_title: "Контакты",
     contact_sub: "Есть проект? Напишите — отвечу в ближайшее время.",
