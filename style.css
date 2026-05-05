@@ -800,3 +800,14 @@ footer {
   transition: opacity var(--ease);
 }
 .modal-btn:hover { opacity: 0.75; }
+
+.mail-btn {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+  border-bottom: 2px solid var(--text);
+  padding-bottom: 2px;
+  transition: opacity var(--ease);
+}
+.mail-btn:hover { opacity: 0.5; }
