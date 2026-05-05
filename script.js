@@ -69,14 +69,6 @@ p11_desc:  "IFBB Avropa çempionu, professional fitness trainer üçün hazırla
     contact_title: "Əlaqə",
     contact_sub:
       "Bir layihən var? Yazın, tezliklə cavab verəcəm.",
-    ph_name: "Ad Soyad — məs. Əli Hüseynov",
-    ph_phone: "Telefon — məs. +994 50 123 45 67",
-    ph_title: "Layihə başlığı — məs. Restoran üçün sayt",
-    ph_details:
-      "Detallar — nə istədiyin, büdcə, tələblər, rəng üstünlükləri...",
-    ph_deadline: "Neçə günə lazımdır? — məs. 7 gün, 2 həftə",
-    submit_btn: "WhatsApp-dan göndər",
-    or_email: "Və ya email:",
     stat_projects: "Layihə",
     stat_langs: "Dil dəstəyi",
     stat_satisfaction: "% Müştəri məmnuniyyəti",
@@ -134,14 +126,6 @@ p11_desc:  "A website for an IFBB European champion and professional fitness tra
     contact_title: "Contact",
     contact_sub:
       "Got a project? Send me an email and I'll get back to you.",
-    ph_name: "Full Name — e.g. John Smith",
-    ph_phone: "Phone — e.g. +994 50 123 45 67",
-    ph_title: "Project title — e.g. Website for a restaurant",
-    ph_details:
-      "Details — what you need, budget, requirements, color preferences...",
-    ph_deadline: "Deadline — e.g. 7 days, 2 weeks",
-    submit_btn: "Send via WhatsApp",
-    or_email: "Or email:",
     stat_projects: "Projects",
     stat_langs: "Language support",
     stat_satisfaction: "% Client satisfaction",
@@ -198,13 +182,6 @@ p11_desc:  "Сайт для чемпиона Европы IFBB и професс
 
     contact_title: "Контакты",
     contact_sub: "Есть проект? Напишите — отвечу в ближайшее время.",
-    ph_name: "Имя Фамилия — напр. Али Гасанов",
-    ph_phone: "Телефон — напр. +994 50 123 45 67",
-    ph_title: "Название проекта — напр. Сайт для ресторана",
-    ph_details: "Детали — что нужно, бюджет, требования, пожелания по цвету...",
-    ph_deadline: "Срок — напр. 7 дней, 2 недели",
-    submit_btn: "Отправить через WhatsApp",
-    or_email: "Или email:",
     stat_projects: "Проектов",
     stat_langs: "Языковая поддержка",
     stat_satisfaction: "% Удовлетворённость",
