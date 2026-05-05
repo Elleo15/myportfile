@@ -68,7 +68,7 @@ p11_desc:  "IFBB Avropa çempionu, professional fitness trainer üçün hazırla
     /* Əlaqə */
     contact_title: "Əlaqə",
     contact_sub:
-      "Bir layihən var? Məlumatları doldur, WhatsApp-dan cavab verəcəm.",
+      "Bir layihən var? Yazın, tezliklə cavab verəcəm.",
     ph_name: "Ad Soyad — məs. Əli Hüseynov",
     ph_phone: "Telefon — məs. +994 50 123 45 67",
     ph_title: "Layihə başlığı — məs. Restoran üçün sayt",
@@ -133,7 +133,7 @@ p11_desc:  "A website for an IFBB European champion and professional fitness tra
 
     contact_title: "Contact",
     contact_sub:
-      "Got a project? Fill in the details and I'll get back to you on WhatsApp.",
+      "Got a project? Send me an email and I'll get back to you.",
     ph_name: "Full Name — e.g. John Smith",
     ph_phone: "Phone — e.g. +994 50 123 45 67",
     ph_title: "Project title — e.g. Website for a restaurant",
@@ -197,7 +197,7 @@ p11_desc:  "A website for an IFBB European champion and professional fitness tra
 p11_desc:  "Сайт для чемпиона Европы IFBB и профессионального фитнес-тренера. Система бронирования, услуги, достижения, отзывы клиентов.",
 
     contact_title: "Контакты",
-    contact_sub: "Есть проект? Заполни форму — отвечу в WhatsApp.",
+    contact_sub: "Есть проект? Напишите — отвечу в ближайшее время.",
     ph_name: "Имя Фамилия — напр. Али Гасанов",
     ph_phone: "Телефон — напр. +994 50 123 45 67",
     ph_title: "Название проекта — напр. Сайт для ресторана",
