@@ -326,48 +326,7 @@ const skillsGrid = document.querySelector(".skills-grid");
 if (skillsGrid) barObserver.observe(skillsGrid);
 
 /* ══════════════════════════════════════════
-   WHATSAPP FORMU
-   Form göndərildikdə bütün sahələri götürüb
-   formatlanmış WhatsApp mesajı yaradır.
-   Nömrəni dəyişmək üçün yuxarıdakı
-   WHATSAPP_NUMBER sabitini yenilə.
-══════════════════════════════════════════ */
-function submitForm(e) {
-  e.preventDefault();
-
-  /* Sahə dəyərlərini al */
-  const name = document.getElementById("f-name").value.trim();
-  const phone = document.getElementById("f-phone").value.trim();
-  const title = document.getElementById("f-title").value.trim();
-  const details = document.getElementById("f-details").value.trim();
-  const deadline = document.getElementById("f-deadline").value.trim();
-
-  /* WhatsApp mesajını format et
-     Mətni dəyişmək istəsən aşağıdakı şablonu redaktə et */
-  const message = encodeURIComponent(
-    `💼 *Portfeyl saytından müraciət*\n\n` +
-      `👤 Ad: ${name}\n` +
-      `📞 Tel: ${phone}\n` +
-      `📌 Layihə: ${title}\n` +
-      `📝 Detallar: ${details || "—"}\n` +
-      `⏱ Müddət: ${deadline || "—"}`,
-  );
-
-  /* WhatsApp-ı aç */
-  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank");
-
-  /* Düymənin yazısını müvəqqəti dəyiş */
-  const btn = document.querySelector("#contact-form button");
-  const original = btn.textContent;
-  btn.textContent = "✓ Açılır...";
-  btn.disabled = true;
-
-  setTimeout(() => {
-    btn.textContent = original;
-    btn.disabled = false;
-    document.getElementById("contact-form").reset();
-  }, 3000);
-}
+ 
 /* ══════════════════════════════════════════
    TERMİNAL YAZI EFFEKTİ
    Hero-da adın altında çıxan yazı
